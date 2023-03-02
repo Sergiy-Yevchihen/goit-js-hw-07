@@ -8,16 +8,16 @@ const galleryCardsSet = createGallery(galleryItems);
 function createGallery(galleryItems) {
   return galleryItems
     .map(({ original, preview, description }) => {
-      return `<div class="gallery__item" style= "border-radius: 5%; box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      return `<div class="gallery__item" style= "border-radius: 20%; box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1)">
-  <a class="gallery__link" href="${original}" style= "border-radius: 5%; box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+  <a class="gallery__link" href="${original}" style= "border-radius: 20%; box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1)">
     <img
       class="gallery__image"
       src="${preview}"
       data-source="${original}"
       alt="${description}"
-      style= "border-radius: 5%; box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+      style= "border-radius: 20%; box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1)"
     />
   </a>
@@ -35,7 +35,7 @@ function selectGalleryEl(event) {
     return;
   }
   const instance = basicLightbox.create(
-    `<img src="${event.target.dataset.source}" width="800" height="600" style= "border-radius: 5%; box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    `<img src="${event.target.dataset.source}" width="800" height="600" style= "border-radius: 15%; box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
     7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1)">`,
 
     {
